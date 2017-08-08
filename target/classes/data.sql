@@ -1,0 +1,35 @@
+INSERT INTO coches (color, combustible, imagen, marca, modelo, potencia, precio, year) VALUES
+('Rojo', 'Gasolina', 'https://acs2.blob.core.windows.net/imgcatalogo/l/VA_3616b3d40f4347cd9b9c403bdced5d70.jpg', 'Ford', 'Fiesta', '1500cv', '12000', '2012'),
+('Azul', 'Diesel', 'http://m1.es.f6m.fr/gama-renault/renault-vehiculos-turismos/gama-megane/megane-berlina/boites-fermees/attbe92c5ed3ad5458dad8167297b73b80b/megane-gt-line.jpeg', 'Renault', 'Megane', '1400cv', '20000', '2017'),
+('Amarillo', 'Diesel', 'https://acs2.blob.core.windows.net/imgcatalogo/l/VA_3616b3d40f4347cd9b9c403bdced5d70.jpg', 'Ferrari', 'Testarossa', '5500cv', '120000', '2014'),
+('Negro', 'Gasolina', 'https://acs2.blob.core.windows.net/imgcatalogo/l/VA_3616b3d40f4347cd9b9c403bdced5d70.jpg', 'Toyota', 'Yaris', '1500cv', '12000', '2015'),
+('Azul', 'Gasolina', 'https://acs2.blob.core.windows.net/imgcatalogo/l/VA_3616b3d40f4347cd9b9c403bdced5d70.jpg', 'Ford', 'Fusion', '1500cv', '12000', '2012'),
+('Marrón', 'Gasolina', 'https://acs2.blob.core.windows.net/imgcatalogo/l/VA_3616b3d40f4347cd9b9c403bdced5d70.jpg', 'Ford', 'Fiesta', '1500cv', '12000', '2012'),
+('Rojo', 'Gasolina', 'https://acs2.blob.core.windows.net/imgcatalogo/l/VA_3616b3d40f4347cd9b9c403bdced5d70.jpg', 'Ford', 'Fiesta', '1500cv', '12000', '2012'),
+('Azul', 'Diesel', 'http://m1.es.f6m.fr/gama-renault/renault-vehiculos-turismos/gama-megane/megane-berlina/boites-fermees/attbe92c5ed3ad5458dad8167297b73b80b/megane-gt-line.jpeg', 'Renault', 'Megane', '1400cv', '20000', '2017'),
+('Amarillo', 'Diesel', 'https://acs2.blob.core.windows.net/imgcatalogo/l/VA_3616b3d40f4347cd9b9c403bdced5d70.jpg', 'Ferrari', 'Testarossa', '5500cv', '120000', '2014'),
+('Negro', 'Gasolina', 'https://acs2.blob.core.windows.net/imgcatalogo/l/VA_3616b3d40f4347cd9b9c403bdced5d70.jpg', 'Toyota', 'Yaris', '1500cv', '12000', '2015'),
+('Azul', 'Gasolina', 'https://acs2.blob.core.windows.net/imgcatalogo/l/VA_3616b3d40f4347cd9b9c403bdced5d70.jpg', 'Ford', 'Fusion', '1500cv', '12000', '2012'),
+('Marrón', 'Gasolina', 'https://acs2.blob.core.windows.net/imgcatalogo/l/VA_3616b3d40f4347cd9b9c403bdced5d70.jpg', 'Ford', 'Fiesta', '1500cv', '12000', '2012'),
+('Rojo', 'Gasolina', 'https://acs2.blob.core.windows.net/imgcatalogo/l/VA_3616b3d40f4347cd9b9c403bdced5d70.jpg', 'Ford', 'Fiesta', '1500cv', '12000', '2012'),
+('Azul', 'Diesel', 'http://m1.es.f6m.fr/gama-renault/renault-vehiculos-turismos/gama-megane/megane-berlina/boites-fermees/attbe92c5ed3ad5458dad8167297b73b80b/megane-gt-line.jpeg', 'Renault', 'Megane', '1400cv', '20000', '2017'),
+('Amarillo', 'Diesel', 'https://acs2.blob.core.windows.net/imgcatalogo/l/VA_3616b3d40f4347cd9b9c403bdced5d70.jpg', 'Ferrari', 'Testarossa', '5500cv', '120000', '2014'),
+('Negro', 'Gasolina', 'https://acs2.blob.core.windows.net/imgcatalogo/l/VA_3616b3d40f4347cd9b9c403bdced5d70.jpg', 'Toyota', 'Yaris', '1500cv', '12000', '2015'),
+('Azul', 'Gasolina', 'https://acs2.blob.core.windows.net/imgcatalogo/l/VA_3616b3d40f4347cd9b9c403bdced5d70.jpg', 'Ford', 'Fusion', '1500cv', '12000', '2012'),
+('Marrón', 'Gasolina', 'https://acs2.blob.core.windows.net/imgcatalogo/l/VA_3616b3d40f4347cd9b9c403bdced5d70.jpg', 'Ford', 'Fiesta', '1500cv', '12000', '2012'),
+('Rojo', 'Gasolina', 'https://acs2.blob.core.windows.net/imgcatalogo/l/VA_3616b3d40f4347cd9b9c403bdced5d70.jpg', 'Ford', 'Fiesta', '1500cv', '12000', '2012'),
+('Azul', 'Diesel', 'http://m1.es.f6m.fr/gama-renault/renault-vehiculos-turismos/gama-megane/megane-berlina/boites-fermees/attbe92c5ed3ad5458dad8167297b73b80b/megane-gt-line.jpeg', 'Renault', 'Megane', '1400cv', '20000', '2017'),
+('Amarillo', 'Diesel', 'https://acs2.blob.core.windows.net/imgcatalogo/l/VA_3616b3d40f4347cd9b9c403bdced5d70.jpg', 'Ferrari', 'Testarossa', '5500cv', '120000', '2014'),
+('Negro', 'Gasolina', 'https://acs2.blob.core.windows.net/imgcatalogo/l/VA_3616b3d40f4347cd9b9c403bdced5d70.jpg', 'Toyota', 'Yaris', '1500cv', '12000', '2015'),
+('Azul', 'Gasolina', 'https://acs2.blob.core.windows.net/imgcatalogo/l/VA_3616b3d40f4347cd9b9c403bdced5d70.jpg', 'Ford', 'Fusion', '1500cv', '12000', '2012'),
+('Marrón', 'Gasolina', 'https://acs2.blob.core.windows.net/imgcatalogo/l/VA_3616b3d40f4347cd9b9c403bdced5d70.jpg', 'Ford', 'Fiesta', '1500cv', '12000', '2012'),
+('Rojo', 'Gasolina', 'https://acs2.blob.core.windows.net/imgcatalogo/l/VA_3616b3d40f4347cd9b9c403bdced5d70.jpg', 'Ford', 'Fiesta', '1500cv', '12000', '2012'),
+('Azul', 'Diesel', 'http://m1.es.f6m.fr/gama-renault/renault-vehiculos-turismos/gama-megane/megane-berlina/boites-fermees/attbe92c5ed3ad5458dad8167297b73b80b/megane-gt-line.jpeg', 'Renault', 'Megane', '1400cv', '20000', '2017'),
+('Amarillo', 'Diesel', 'https://acs2.blob.core.windows.net/imgcatalogo/l/VA_3616b3d40f4347cd9b9c403bdced5d70.jpg', 'Ferrari', 'Testarossa', '5500cv', '120000', '2014'),
+('Negro', 'Gasolina', 'https://acs2.blob.core.windows.net/imgcatalogo/l/VA_3616b3d40f4347cd9b9c403bdced5d70.jpg', 'Toyota', 'Yaris', '1500cv', '12000', '2015'),
+('Azul', 'Gasolina', 'https://acs2.blob.core.windows.net/imgcatalogo/l/VA_3616b3d40f4347cd9b9c403bdced5d70.jpg', 'Ford', 'Fusion', '1500cv', '12000', '2012'),
+('Marrón', 'Gasolina', 'https://acs2.blob.core.windows.net/imgcatalogo/l/VA_3616b3d40f4347cd9b9c403bdced5d70.jpg', 'Ford', 'Fiesta', '1500cv', '12000', '2012');
+
+
+
+

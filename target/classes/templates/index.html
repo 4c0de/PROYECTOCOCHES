@@ -1,0 +1,61 @@
+
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+	<meta charset="utf-8" />
+	<title>Coches.com</title>
+	
+	<!-- link de fontawesome para utilizar iconos -->
+	<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous" />
+		
+	<!-- Bootstrap -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous" />
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
+	
+</head>
+<style>
+	body {background: lightblue}
+</style>
+<body>
+
+<header>
+	<div class="grid-block" style="background-image: url('https://www.lamborghini.com/es-en/sites/es-en/files/DAM/it/models_gateway/blocks/special.png'); width: 100%; height: 40vh;" />
+</header>
+
+<section>
+	<article>
+
+			<div class="jumbotron jumbotron-fluid; text-center">
+				<div class="container">
+					<h1 class="display-3">COCHES.COM</h1>
+					<p class="lead">La mayor base de datos de coches del mundo</p>
+				</div>
+			</div>
+			<div th:if="${param.error}">
+                <h3 class="display-3; text-center">Error en username o password </h3>
+            </div>
+            <div th:if="${param.logout}">
+               <h3 class="display-3; text-center">Has cerrado sesión</h3>
+            </div>
+		    <form class="form-inline; text-center" th:action="@{/index}" method="post">
+				    <div class="form-group">
+				        <label for="nombre">Usuario:</label>
+				        <input type="text" class="form-group mx-sm-3" name="username" required="required" placeholder="Username"></input>
+				   </div>
+				   <div class="form-group">
+				      <label for="password">Password:</label>
+				      <input type="password" class="form-group mx-sm-3" name="password" required="required" placeholder="password"></input>
+				   </div>
+				  
+				   <button type="submit" class="btn btn-default">Aceptar</button>
+			 </form>
+		  
+           
+	</article>
+</section>
+<footer>
+		<p>Coches.com. Todos los derechos reservados ©.</p>
+</footer>
+
+</body>
+</html>

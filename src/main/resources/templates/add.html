@@ -1,0 +1,123 @@
+
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1"/>
+  	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"/>
+  	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+	<title>Coches.com</title>
+	
+	<!-- link de fontawesome para utilizar iconos -->
+	<link
+		href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+		rel="stylesheet"
+		integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN"
+		crossorigin="anonymous" />
+</head>
+<style>
+		body {background: lightblue}
+</style>
+
+<body>
+
+<header>
+		<div class="grid-block" style="background-image: url('https://www.lamborghini.com/es-en/sites/es-en/files/DAM/it/models_gateway/blocks/special.png'); width: 100%; height: 40vh;" />
+</header>
+<section>
+    <article>
+             <h1 th:inline="text">Bienvenido [[${#httpServletRequest.remoteUser}]]!</h1>
+		     <form th:action="@{/logout}" method="post">
+		          <div class="form-group">           
+		            <input class="btn btn-primary" type="submit" value="Cerrar sesión"/>
+		          </div>  
+		     </form>
+             <div class="jumbotron jumbotron-fluid; text-center">
+				<div class="container">
+					<h2 class="display-1">COCHES.COM</h2>
+					<p class="lead">La mayor base de datos de coches del mundo</p>
+				</div>
+   			 </div>	
+
+    </article>
+    <article>
+     	   <div style="color: blue;">
+					<a class="display-7" href="/admin"><i class="fa fa-chevron-left"
+				aria-hidden="true"></i>Volver</a>
+		   </div>
+         
+           <form class="form-horizontal" th:action="@{/addVehiculo}" method="post">
+				    <div class="form-group">
+				     
+				        <label class="control-label col-sm-2" for="imagen">Imagen:</label>
+				        <div class="col-sm-10">
+				        	<input type="text" class="form-control" name="imagen" required="required" placeholder="Insertar url imagen"></input>
+				        </div>  	
+				   </div>
+				   <div class="form-group">
+				        <label class="control-label col-sm-2" for="modelo">Modelo:</label>
+				        <div class="col-sm-10">
+				        	<input type="text" class="form-control" name="modelo" required="required" placeholder="Insertar modelo"></input>
+				        </div>  	
+				   </div>
+				    <div class="form-group">
+				        <label class="control-label col-sm-2" for="marca">Marca:</label>
+				        <div class="col-sm-10">
+				        	<input type="text" class="form-control" name="marca" required="required" placeholder="Insertar marca"></input>
+				        </div>  	
+				   </div>
+				    <div class="form-group">
+				        <label class="control-label col-sm-2" for="color">Color:</label>
+				        <div class="col-sm-10">
+				        	<input type="text" class="form-control" name="color" required="required" placeholder="Insertar color"></input>
+				        </div>  	
+				   </div> 
+				    <div class="form-group">
+				        <label class="control-label col-sm-2" for="year">Año:</label>
+				        <div class="col-sm-10">
+				        	<input type="text" class="form-control" name="year" required="required" placeholder="Insertar año"></input>
+				        </div>  	
+				   </div>
+				    <div class="form-group">
+				        <label class="control-label col-sm-2" for="potencia">Potencia:</label>
+				        <div class="col-sm-10">
+				        	<input type="text" class="form-control" name="potencia" required="required" placeholder="Insertar potencia"></input>
+				        </div>  	
+				   </div>
+				    <div class="form-group">
+				        <label class="control-label col-sm-2" for="combustible">Combustible:</label>
+				        <div class="col-sm-10">
+				        	<input type="text" class="form-control" name="combustible" required="required" placeholder="Insertar combustible"></input>
+				        </div>  	
+				   </div>
+				
+				    <div class="form-group">
+				        <label class="control-label col-sm-2" for="precio">Precio:</label>
+				        <div class="col-sm-10">
+				        	<input type="text" class="form-control" name="precio" required="required" placeholder="Insertar precio"></input>
+				        </div>  	
+				   </div> 
+				   <div class="form-group;text-center">
+				   <button type="submit" class="btn btn-success btn-lg center-block">Aceptar</button>
+				   </div>
+			 </form>
+			 <div style="color: blue;">
+					<a class="display-7" href="/admin"><i class="fa fa-chevron-left"
+				aria-hidden="true"></i>Volver</a>
+			 </div>
+			 <div class="alert alert-info" data-th-if="${mensaje != null}">
+					<p data-th-text="${mensaje}"></p>
+			</div>
+    
+    
+    
+    </article>
+
+</section>   
+<br></br><br></br>
+<footer>
+		<p>Coches.com. Todos los derechos reservados ©.</p>
+</footer>
+</body>
+</html>

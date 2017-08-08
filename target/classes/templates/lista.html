@@ -1,0 +1,99 @@
+
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1"/>
+  	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"/>
+  	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+	<title>Coches.com</title>
+	
+	<!-- link de fontawesome para utilizar iconos -->
+	<link
+		href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+		rel="stylesheet"
+		integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN"
+		crossorigin="anonymous" />
+</head>
+<style>
+		body {background: lightblue}
+</style>
+
+<body>
+
+<header>
+		<div class="grid-block" style="background-image: url('https://www.lamborghini.com/es-en/sites/es-en/files/DAM/it/models_gateway/blocks/special.png'); width: 100%; height: 40vh;" />
+</header>
+<section>
+    <article>
+             <h1 th:inline="text">Bienvenido [[${#httpServletRequest.remoteUser}]]!</h1>
+		     <form th:action="@{/logout}" method="post">
+		          <div class="form-group">           
+		            <input class="btn btn-primary" type="submit" value="Cerrar sesión"/>
+		          </div>  
+		     </form>
+             <div class="jumbotron jumbotron-fluid; text-center">
+				<div class="container">
+					<h2 class="display-1">COCHES.COM</h2>
+					<p class="lead">La mayor base de datos de coches del mundo</p>
+				</div>
+   			 </div>	
+    		<div style="color: blue;">
+					<a class="display-7" href="/admin"><i class="fa fa-chevron-left"
+						aria-hidden="true"></i>Volver</a>
+			</div>
+    </article>
+    <article>
+	    <div class="alert alert-success">
+			<span>Número de coches encontrados en la base de datos: </span><span data-th-text="${resultado.size()}" class="badge bagde-pill badge-info"></span>
+		</div>
+		<div class="container">	
+		   <table  class="table table-hover">
+					<tr>
+						<th >ID</th>
+						<th>Imagen</th>
+						<th>Modelo</th>
+						<th>Marca</th>
+						<th>Color</th>
+						<th>Año</th>
+						<th>Potencia</th>
+						<th>Combustible</th>
+						<th>Precio</th>
+						<th>Acciones</th>
+						
+					</tr>
+					<tr data-th-each="listaCoches : ${resultado}">
+						<td data-th-text="${listaCoches.id}"></td>
+						<td><span> <img th:src="@{''+${listaCoches.imagen}}" src="${listaCoches.imagen}" width="100" height="100"  /></span></td>
+						<td data-th-text="${listaCoches.modelo}"></td>
+						<td data-th-text="${listaCoches.marca}"></td>
+						<td data-th-text="${listaCoches.color}"></td>
+						<td data-th-text="${listaCoches.year}"></td>
+					    <td data-th-text="${listaCoches.potencia}"></td>
+					    <td data-th-text="${listaCoches.combustible}"></td>
+					    <td data-th-text="${listaCoches.precio}"></td>
+					    <td>
+							<div class="btn-toolbar pagination-center" >
+					
+						      		<a class="btn btn-info" data-th-href="@{'/borrar/' +${listaCoches.id}}"><i class="fa fa-trash-o" aria-hidden="true"></i></a>
+						 
+						 	</div>
+			            </td> 
+				   </tr>	
+		</table>
+	</div>
+
+	<div style="color: blue;">
+		<a class="display-7" href="/admin"><i class="fa fa-chevron-left"
+				aria-hidden="true"></i>Volver</a>
+	</div>
+  </article>
+
+</section>   
+<br></br><br></br>
+<footer>
+		<p>Coches.com. Todos los derechos reservados ©.</p>
+</footer>
+</body>
+</html>
